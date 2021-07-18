@@ -41,7 +41,8 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
-    theme                : # "github-light" (default), "github-dark"
+    #theme                : # "github-light" (default), "github-dark"
+    theme                : "github-dark"
     issue_term           : # "pathname" (default)
   giscus:
     repo_id              : # Shown during giscus setup at https://giscus.app
@@ -105,6 +106,7 @@ author:
   avatar           : "/assets/images/crabimage.jpg"
   bio              : "I am an **amazing** person."
   location         : "Earth🌏"
+  github           : "https://github.com/esangbaek"
   email            :
   links:
     - label: "Email"
