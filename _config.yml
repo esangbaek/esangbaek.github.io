@@ -105,7 +105,7 @@ author:
   avatar           : "/assets/images/crabimage.jpg"
   bio              : "I am an **amazing** person."
   location         : "Earth🌏"
-  github           : "https://github.com/esangbaek"
+  github           : "esangbaek"
   email            :
   links:
     - label: "Email"
