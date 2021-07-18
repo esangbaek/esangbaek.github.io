@@ -3,7 +3,7 @@ title:  "첫번째 포스팅 (test)"
 excerpt: "md 파일에 마크다운 문법으로 작성하여 Github 원격 저장소에 업로드 해보기"
 
 categories:
-  - Blog
+  - AIoT
 tags:
   - [Blog, jekyll, Github, Git]
  
