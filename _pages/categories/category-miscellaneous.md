@@ -1,7 +1,7 @@
 ---
 title: "잡동사니"
 layout: categories
-permalink: /categories/
+permalink: /categories/miscellaneous
 author_profile: true
 sidebar_main: true
 ---
