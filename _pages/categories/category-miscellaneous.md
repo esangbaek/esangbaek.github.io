@@ -1,7 +1,8 @@
 ---
 title: "잡동사니"
-layout: categories
+layout: category
 permalink: /categories/miscellaneous
+taxonomy: Miscellaneous
 author_profile: true
 sidebar_main: true
 ---
