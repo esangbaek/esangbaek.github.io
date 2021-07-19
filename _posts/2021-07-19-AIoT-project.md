@@ -12,8 +12,6 @@ toc_sticky: true
 date: 2021-07-19
 last_modified_at: 2021-07-19
 sitemap:
-	changefreq : weekly
-	priority : 1.0
 ---
 # Maixduino를 이용한 AIoT 프로젝트
 
