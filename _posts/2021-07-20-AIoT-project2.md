@@ -49,9 +49,9 @@ sitemap:
 
 
 
-![image-20210720183433489](C:\Users\baksa\AppData\Roaming\Typora\typora-user-images\image-20210720183433489.png)
+![image](https://user-images.githubusercontent.com/65602371/126338995-3d1a9106-a593-443f-ac85-992adc7def87.png)
 
-![image-20210720183626930](C:\Users\baksa\AppData\Roaming\Typora\typora-user-images\image-20210720183626930.png)
+![image](https://user-images.githubusercontent.com/65602371/126339067-dd9f0008-0591-413f-8739-258a81ebd41a.png)
 
 > Maixduino 상세정보 (아두이노와 똑같은 핀 번호를 사용. 하지만 고유한 번호 또한 존재.)
 
