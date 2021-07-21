@@ -15,7 +15,7 @@ sitemap:
 
 
 ---
-# Maixduino를 이용해 LED,스위치 제어하기
+
 
 > Language : Python ![GitHub Pipenv locked Python version badge](https://img.shields.io/badge/python-v3.9-blue)
 
@@ -177,7 +177,7 @@ while True:
 
 > LCD에 원, 사각형, 선, 문자 출력해보기
 
-```pyth
+```python
 # use_lcd.py
 import lcd,image,utime
 
