@@ -16,7 +16,6 @@ sitemap:
 
 ---
 
-
 > Language : Python ![GitHub Pipenv locked Python version badge](https://img.shields.io/badge/python-v3.9-blue)
 
 ## Today I Learned
