@@ -19,6 +19,14 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+		<span class="nav__sub-title">임베디드</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "ES" %}
+                        <li><a href="/categories/essystem" class="">임베디드 시스템 이론 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <span class="nav__sub-title">OS Programming</span>
             <ul>
                 {% for category in site.categories %}
