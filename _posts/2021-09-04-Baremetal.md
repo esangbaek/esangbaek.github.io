@@ -1,5 +1,5 @@
 ---
-title:  "베어메탈 프로그래밍 1"
+title:  "베어메탈 프로그래밍 이란"
 excerpt: "임베디드 시스템 - 베어 메탈"
 
 categories: BMP
