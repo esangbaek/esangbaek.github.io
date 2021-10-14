@@ -1,5 +1,5 @@
 ---
-title:  "베어메탈 프로그래밍 프로젝트1"
+title:  "베어메탈 프로그래밍 1 + ARM core"
 excerpt: "Bare metal programming을 시작하기에 앞서"
 
 categories: BMP
@@ -84,6 +84,19 @@ MCU, I/O device등에 완전히 종속적인 low-level programming -> Bare-Metal
 
 &nbsp;
 
+> **MPU vs MCU**
+
+MPU ( Micro Processor Unit )
+
+- ALU ( Arithmetic Logic Unit) + CU ( Control Unit ) => One Chip
+
+MCU ( Micro Controller Unit )
+
+- Microprocessor core + System BUS + RAM,ROM + I/O => One Chip
+- 외부장치를 바로 연결할 수 있기 때문에 효율적으로 사용가능하다.
+
+&nbsp;
+
 ### Cortex Processors
 
 ARMv7 Architecture의 코어를 가지는 프로세서
@@ -132,6 +145,39 @@ ARMv7 Architecture의 코어를 가지는 프로세서
 
 **Cortex Processor <-> Cortex based MCU**
 
-Cortex Processor : ARM사에서 설계한 프로세스 코어
+- Cortex Processor : ARM사에서 설계한 프로세스 코어
 
-Cortex based Processor : 프로세서 코어를 바탕으로 여러 가지 주변 장치를 추가하여 완성된 MCU
+- Cortex based Processor : 프로세서 코어를 바탕으로 여러 가지 주변 장치를 추가하여 완성된 MCU
+
+&nbsp;
+
+### ARM Processor에 내장된 기능
+
+Memory Protection Unit ( MPU )
+
+- 동작모드 : Thread mode, Handler mode
+- 메모리 접근 레벨 : Privileged level, User level
+- 인터럽트 서비스 루틴(ISR) 진입과 탈출의 시간이 빠르다
+- 메모리 엑세스에 대한 제한 ( 메모리 접근 레벨 )
+- 일반적으로는 운영체제가 MPU를 설정하여 Previleged level에서 사용하는 데이터를 User level의 프로그램에서 접근하지 못하도록 막는 형태로 사용한다
+
+&nbsp;
+
+Nested Vectored Interrupt Controller
+
+- 프로세서에 내장된 인터럽트 제어기
+- 모든 Interrupt(Exception)에 대한 우선 순위를 결정하고 이를 처리함
+- 인터럽트가 발생하여 처리하고 있는 중에 더 높은 우선 순위의 인터럽트가 발생하면 현재 처리하고 있는 동작을 멈추고 높은 우선 순위의 인터럽트를 처리한다. 우선 순위가 높은 인터럽트가 끝나면 다시 실행을 하게 된다. 
+- NVIC는 미리 정해진 우선 순위에 따라 자동적으로 중첩 인터럽트 동작을 수행함
+- Vector table : 메모리 내에 ISR의 시작 주소를 저장하고 있음
+- Vectored Interrupt : Vector table을 이용해 인터럽트 발생 시 별도의 소프트웨어 필요없이 바로 ISR의 시작 주소를 알 수 있다. 이는 인터럽트 처리 속도가 빨라지게 해준다. 과거에는 SW적으로 처리를 하였으나, 현재는 HW Circuit으로 만들어 더 효율적이 되었음.
+
+&nbsp;
+
+> **Exceptions**
+
+System Exception과 External Interrupt로 나뉜다
+
+- System Exception : 프로세서 내에서 발생 (최대 15개까지 가능)
+- External Interrupt : 주변 장치(GPIO, Timer 등)에서 발생 (최대 240개까지 가능, 제조사별로 구성 상이)
+

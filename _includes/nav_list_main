@@ -34,6 +34,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+			<ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "OSEK" %}
+                        <li><a href="/categories/osek" class="">OSEK/VDX ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <span class="nav__sub-title">OS Programming</span>
             <ul>
                 {% for category in site.categories %}
@@ -50,7 +57,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-		<span class="nav__sub-title">Miscellaneous</span>
+		<span class="nav__sub-title">Misc</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Miscellaneous" %}
