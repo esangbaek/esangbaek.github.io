@@ -15,7 +15,7 @@
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for category in site.categories %}
                     {% if category[0] == "AIoT" %}
-                        <li><a href="/categories/aiot" class="">Start AIoT ({{category[1].size}})</a></li>
+                        <li><a href="/categories/aiot" class="">AIoT ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -41,11 +41,11 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">OS Programming</span>
+        <span class="nav__sub-title">Parallel Programming</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "OS" %}
-                        <li><a href="/categories/os" class="">STM32 ({{category[1].size}})</a></li>
+                    {% if category[0] == "PARALLEL" %}
+                        <li><a href="/categories/parallel" class="">병렬 컴퓨팅 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
