@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Lee's blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Coffeeman"
+name                     : "Lee"
 description              : "An amazing website."
 url                      : "https://esangbaek.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -101,7 +101,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Coffee man☕"
+  name             : "Lee"
   avatar           : "/assets/images/coffeeman.png"
   bio              : "I am korean."
   location         : "Earth🌏"
