@@ -61,10 +61,10 @@ String : 문자열을 다룰 때 사용한다
   - *max_~로 값을 반환하게 할 수 있다.
     - min_element()	:	가장 작은 값의 참조값을 반환
 - lower_bound & upper_bound
-  - lower_bound( vect.begin(), vect.end(), value )
+  - **lower_bound( vect.begin(), vect.end(), value )**
     - value값 보다 같거나 큰 첫번째 원소의 위치 참조값
     - 없다면 end를 return 한다
-  - upper_bound( vect.begin(), vect.end(), value )
+  - **upper_bound( vect.begin(), vect.end(), value )**
     - 처음으로 value값을 초과하는 원소의 주소
     - 없다면 end를 return
   - 만약 index를 반환받고 싶다면?
@@ -72,6 +72,11 @@ String : 문자열을 다룰 때 사용한다
     - upper도 동일하게 사용
     - 배열일 경우는
       - upper_bound( arr, arr+10, val ) - arr
+- 중복된 배열 값 제거하기 (vector 이용)
+  - **v.erase( unique( v.begin(), v.end() ), v.end() );**
+    - unique함수는 반환값이 vector의 중복된 값이 모여있는 첫번째 위치가 되므로 바로 erase함수에서 사용가능하다.
+    - sort()와 함께 사용하면 정렬 후 중복된 원소를 제거할 수 있다.
+
 
 #### String
 
@@ -90,7 +95,7 @@ String : 문자열을 다룰 때 사용한다
   - atoi(), std::string c_str()
     - ex) string str="123";    int num=atoi(str.c_str());
     - c_str()은 해당하는 string의 첫번째 문자 주소값을 반환한다
-- substr()
+- **substr()**
   - 문자열의 일부를 추출할 때, 일부를 복사할 때 사용
 
 ```c++
@@ -113,7 +118,7 @@ numbers.substr(3,2)	-> "34"		인덱스 이후 부분 문자열
 
 
 - 절댓값
-  - abs()
+  - **abs()**
 
 #### 기타
 
